@@ -3,7 +3,7 @@ package com.gy.algorithm.basic.sort;
 /**
  * @ClassName ShellSortTest
  * @Description TOOD
- * @Author lipeng
+ * @Author guyuetftb
  * @Date 2020-04-05 17:14
  */
 public class ShellSortTest {

@@ -6,7 +6,7 @@ import java.util.LinkedHashMap;
 /**
  * @ClassName StringPatternTest
  * @Description TOOD
- * @Author lipeng
+ * @Author guyuetftb
  * @Date 2020-04-08 17:30
  */
 public class StringPatternTest {

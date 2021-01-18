@@ -3,7 +3,7 @@ package com.gy.algorithm.basic.string;
 /**
  * @ClassName StringReverseParenthesesTest
  * @Description TOOD
- * @Author lipeng
+ * @Author guyuetftb
  * @Date 2020-05-27 17:07
  */
 public class StringReverseParenthesesTest {

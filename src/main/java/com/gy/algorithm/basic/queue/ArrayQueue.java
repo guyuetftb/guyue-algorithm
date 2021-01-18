@@ -5,7 +5,7 @@ import java.util.Arrays;
 /**
  * @ClassName ArrayQueue
  * @Description TOOD
- * @Author lipeng
+ * @Author guyuetftb
  * @Date 2020-04-08 16:39
  */
 public class ArrayQueue<E> {

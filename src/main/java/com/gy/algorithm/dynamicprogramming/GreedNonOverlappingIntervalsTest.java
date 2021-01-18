@@ -10,7 +10,7 @@ import java.util.Objects;
 /**
  * @ClassName NonOverlappingIntervalsTes
  * @Description TOOD
- * @Author lipeng
+ * @Author guyuetftb
  * @Date 2020-03-28 20:39
  */
 public class GreedNonOverlappingIntervalsTest {

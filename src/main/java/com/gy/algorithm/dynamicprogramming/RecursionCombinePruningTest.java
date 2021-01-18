@@ -8,7 +8,7 @@ import java.util.function.Consumer;
 /**
  * @ClassName RecursionCombineTest46
  * @Description TOOD
- * @Author lipeng
+ * @Author guyuetftb
  * @Date 2020-03-29 20:55
  */
 public class RecursionCombinePruningTest {

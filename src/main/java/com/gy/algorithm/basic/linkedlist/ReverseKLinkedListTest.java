@@ -3,7 +3,7 @@ package com.gy.algorithm.basic.linkedlist;
 /**
  * @ClassName ReverseLinkedListTest
  * @Description TOOD
- * @Author lipeng
+ * @Author guyuetftb
  * @Date 2020-04-09 20:13
  */
 public class ReverseKLinkedListTest {

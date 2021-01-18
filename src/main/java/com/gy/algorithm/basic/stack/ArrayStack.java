@@ -5,7 +5,7 @@ import java.util.Arrays;
 /**
  * @ClassName ArrayStack
  * @Description TOOD
- * @Author lipeng
+ * @Author guyuetftb
  * @Date 2020-04-08 16:28
  */
 public class ArrayStack<E> {

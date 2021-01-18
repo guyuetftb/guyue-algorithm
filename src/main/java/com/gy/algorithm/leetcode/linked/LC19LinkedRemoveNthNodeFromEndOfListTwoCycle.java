@@ -5,7 +5,7 @@ import com.gy.datastructure.linkedlist.LinkedList;
 /**
  * Friendship is a sheltering tree.
  *
- * @author : leelipeng
+ * @author : guyuetftb
  * @date : 2020-09-14 17:14
  */
 public class LC19LinkedRemoveNthNodeFromEndOfListTwoCycle {

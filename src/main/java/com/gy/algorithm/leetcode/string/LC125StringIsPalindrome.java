@@ -3,7 +3,7 @@ package com.gy.algorithm.leetcode.string;
 /**
  * Friendship is a sheltering tree.
  *
- * @author : leelipeng
+ * @author : guyuetftb
  * @date : 2020-11-18 19:54
  */
 public class LC125StringIsPalindrome {

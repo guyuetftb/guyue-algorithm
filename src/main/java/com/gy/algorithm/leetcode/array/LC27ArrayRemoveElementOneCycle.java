@@ -1,10 +1,7 @@
 package com.gy.algorithm.leetcode.array;
 
 /**
- * Friendship is a sheltering tree.
- *
- * @author : leelipeng
- * @date : 2020-11-16 20:18
+ * @author : guyuetftb
  */
 public class LC27ArrayRemoveElementOneCycle {
 

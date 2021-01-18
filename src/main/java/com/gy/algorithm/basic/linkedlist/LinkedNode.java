@@ -3,7 +3,7 @@ package com.gy.algorithm.basic.linkedlist;
 /**
  * @ClassName LinkedNode
  * @Description TOOD
- * @Author lipeng
+ * @Author guyuetftb
  * @Date 2020-04-09 14:16
  */
 public class LinkedNode<E> {

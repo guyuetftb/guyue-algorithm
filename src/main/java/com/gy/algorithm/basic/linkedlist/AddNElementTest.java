@@ -3,7 +3,7 @@ package com.gy.algorithm.basic.linkedlist;
 /**
  * @ClassName RemoveTailNElementTest
  * @Description TOOD
- * @Author lipeng
+ * @Author guyuetftb
  * @Date 2020-04-09 14:13
  */
 public class AddNElementTest {

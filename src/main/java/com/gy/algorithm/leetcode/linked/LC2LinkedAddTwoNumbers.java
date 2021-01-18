@@ -7,7 +7,7 @@ import com.sun.xml.internal.bind.v2.runtime.output.SAXOutput;
 /**
  * Friendship is a sheltering tree.
  *
- * @author : leelipeng
+ * @author : guyuetftb
  * @date : 2020-11-17 16:08
  */
 public class LC2LinkedAddTwoNumbers {

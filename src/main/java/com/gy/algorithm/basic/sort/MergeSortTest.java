@@ -5,7 +5,7 @@ import java.util.Arrays;
 /**
  * @ClassName MergeSortTest
  * @Description TOOD
- * @Author lipeng
+ * @Author guyuetftb
  * @Date 2020-04-08 12:35
  */
 public class MergeSortTest {

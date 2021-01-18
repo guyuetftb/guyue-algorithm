@@ -7,7 +7,7 @@ import java.util.Stack;
 /**
  * @ClassName BinarySearchTree
  * @Description TOOD
- * @Author lipeng
+ * @Author guyuetftb
  * @Date 2019-11-20 07:56
  */
 public class BinarySearchTree<E extends Comparable<E>> {
@@ -196,7 +196,7 @@ public class BinarySearchTree<E extends Comparable<E>> {
 	}
 
 	public void preOrderNR() {
-		// 2019-12-12 by lipeng
+		// 2019-12-12 by guyuetftb
 		// 非递归调用树的前序遍历, 需要借助 Stack 这个数据结果.
 		// 特别解释一下操作逻辑
 		// a. 前序遍历的顺序是，先当前节点，再左子树，再右子树
@@ -223,7 +223,7 @@ public class BinarySearchTree<E extends Comparable<E>> {
 	public void levelOrder() {
 		Queue<Node> queue = new LinkedList<>();
 		queue.add(root);
-		// 2019-12-12 by lipeng
+		// 2019-12-12 by guyuetftb
 		// 非递归调用: 树的层序遍历, 或者广度遍历.
 		// 层序遍历需要借助 Queue 数据结构.
 		// 特别说明:

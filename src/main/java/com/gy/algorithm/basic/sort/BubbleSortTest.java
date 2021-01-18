@@ -3,7 +3,7 @@ package com.gy.algorithm.basic.sort;
 /**
  * @ClassName BubbleSortTest
  * @Description TOOD
- * @Author lipeng
+ * @Author guyuetftb
  * @Date 2020-04-05 16:03
  */
 public class BubbleSortTest {

@@ -3,7 +3,7 @@ package com.gy.algorithm.basic.array;
 /**
  * @ClassName ArrayMergeTwoArrIntoOneArrTest
  * @Description TOOD
- * @Author lipeng
+ * @Author guyuetftb
  * @Date 2020-05-27 17:14
  */
 public class ArrayMergeTwoArrIntoOneArrTest {

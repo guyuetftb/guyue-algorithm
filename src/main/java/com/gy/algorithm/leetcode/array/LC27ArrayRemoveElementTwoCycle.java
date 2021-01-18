@@ -5,7 +5,7 @@ import java.util.Arrays;
 /**
  * Friendship is a sheltering tree.
  *
- * @author : leelipeng
+ * @author : guyuetftb
  * @date : 2020-11-16 20:18
  */
 public class LC27ArrayRemoveElementTwoCycle {

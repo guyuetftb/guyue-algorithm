@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * @ClassName MinimumTriangle120
  * @Description TOOD
- * @Author lipeng
+ * @Author guyuetftb
  * @Date 2020-04-11 11:45
  */
 public class MinimumTriangle120 {

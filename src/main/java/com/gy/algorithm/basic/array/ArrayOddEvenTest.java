@@ -3,7 +3,7 @@ package com.gy.algorithm.basic.array;
 /**
  * @ClassName ArrayOddEvenTest
  * @Description TOOD
- * @Author lipeng
+ * @Author guyuetftb
  * @Date 2020-05-07 16:26
  */
 public class ArrayOddEvenTest {

@@ -3,7 +3,7 @@ package com.gy.algorithm.basic.sort;
 /**
  * @ClassName QuickSortTest
  * @Description TOOD
- * @Author lipeng
+ * @Author guyuetftb
  * @Date 2020-04-08 15:36
  */
 public class QuickSortTest {

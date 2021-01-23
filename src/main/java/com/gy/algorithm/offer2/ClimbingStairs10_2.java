@@ -25,7 +25,7 @@ package com.gy.algorithm.offer2;
  * @author : leelipeng
  * @date : 2021-01-23 21:37
  */
-public class ClimbingStairs11 {
+public class ClimbingStairs10_2 {
 
     /**
      * 该题的解法与 Fib10 题(斐波那契)一样

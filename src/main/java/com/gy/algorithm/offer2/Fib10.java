@@ -13,7 +13,7 @@ public class Fib10 {
     private static int mod = 1000000007;
 
     public static void main(String[] args) {
-        fibDynamic(5);
+        fibDynamic(7);
     }
 
     /**

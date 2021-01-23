@@ -32,6 +32,10 @@ public class CQueue09 {
      * 问题:
      * 刚开始看到该题目,字符串与数字混合输入没有看懂题意，看了答案才明白，不用关心字符串。
      *
+     * 问题1: 栈只能是先进后出, 后进先出.
+     * 问题2: 单纯使用栈无法实现 队列的功能.
+     * 问题3: 可以使用2栈实现队列功能, 1个队列负责插入元素, 2个队列负责输出元素.
+     * 问题4: 输出元素时, deleteStack中没有元素, 把addStack中元素 弹栈, 再插入 deleteStack中, 再从deleteStack中出栈,就实现了栈的功能.
      * @param args
      */
     public static void main(String[] args) {

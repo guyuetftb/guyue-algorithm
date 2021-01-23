@@ -8,6 +8,9 @@ import java.util.Stack;
  * 输入：head = [1,3,2]
  * 输出：[2,3,1]
  *
+ * 限制：
+ * 0 <= 链表长度 <= 10000
+ *
  * @author : leelipeng
  * @date : 2021-01-23 15:27
  */
@@ -38,6 +41,8 @@ public class ReversePrintLinkedList06 {
             cur = node;
         }
         reverseLinkedList(head);
+        int[] resArr2 = reverseLinkedList2(head);
+        System.out.println(resArr2.length);
     }
 
 
@@ -74,6 +79,39 @@ public class ReversePrintLinkedList06 {
         ListNode(int x) {
             val = x;
         }
+    }
+
+    public static int arrSize = 0;
+    public static int recursionIndex = 0;
+    public static int[] resArr = null;
+    /**
+     * 通过递归的方式反转链表.
+     * 问题1: 题目有限制链表小点于10000, 其实这也可能会造成栈溢出.
+     * 问题2: 递归的方式也是不知道链表长度的.
+     * 问题3: 递归返回时, 为结果数组赋值, 所以链表长度, 递归索引必须是全局可访问的
+     * @param head
+     * @return
+     */
+    public static int[] reverseLinkedList2(ListNode head){
+        reverse(head);
+        return resArr;
+    }
+
+    public static void reverse(ListNode head){
+        if(head == null){
+            // 已经到了链表尾, 知道了 链表长度
+            resArr = new int[arrSize];
+            return;
+        }
+        // 未到链表末尾, 个数加1.
+        arrSize ++;
+        // 使用当前链表下1个节点接着递归
+        reverse(head.next);
+        // 已经到链表尾, 或 上一轮递归返回.
+        // 从后向前为 结果数组resArr赋值.
+        resArr[recursionIndex] = head.val;
+        // 第1次 recursionIndex = 0, 所以应该先从 赋值, 再对 recursionIndex 累加.
+        recursionIndex++;
     }
 
 }

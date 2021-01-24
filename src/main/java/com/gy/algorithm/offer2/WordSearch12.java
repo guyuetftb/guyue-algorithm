@@ -71,14 +71,13 @@ public class WordSearch12 {
      * <p> 返回 true ： k = len(word) - 1 ，即字符串 word 已全部匹配。
      *
      * <p> 递推工作：
-     * <p> 标记当前矩阵元素： 将 board[i][j] 修改为 空字符 '' ，代表此元素已访问过，防止之后搜索时重复访问。
-     * <p> 搜索下一单元格： 朝当前元素的 上、下、左、右 四个方向开启下层递归，使用 或 连接 （代表只需找到一条可行路径就直接返回，不再做后续 DFS ），并记录结果至 res 。
+     * <p> 标记当前矩阵元素： 将 board[i][j] 修改为 '#' ，代表此元素已访问过，防止之后搜索时重复访问。
+     * <p> 搜索下一单元格： 朝当前元素的 上、下、左、右 四个方向开启下层递归，使用 或 连接 （代表只需找到一条可行路径就直接返回，不再做后续 DFS )，并记录结果至 res 。
      * <p> 还原当前矩阵元素： 将 board[i][j] 元素还原至初始值，即 word[k] 。
      * <p> 返回值： 返回布尔量 res ，代表是否搜索到目标字符串。
      * <p>
      * 链接：https://leetcode-cn.com/problems/ju-zhen-zhong-de-lu-jing-lcof/solution/mian-shi-ti-12-ju-zhen-zhong-de-lu-jing-shen-du-yo/
      * 来源：力扣（LeetCode）
-     * 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
      *
      * @param board
      * @param word

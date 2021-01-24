@@ -1,5 +1,8 @@
 package com.gy.algorithm.offer2;
 
+import java.util.LinkedList;
+import java.util.Queue;
+
 /**
  * <p> 地上有一个m行n列的方格，从坐标 [0,0] 到坐标 [m-1,n-1] 。一个机器人从坐标 [0, 0] 的格子开始移动，它每次可以向左、右、上、下移动一格（不能移动到方格外），也不能进入行坐标和列坐标的数位之和大于k的格子。例如，当k为18时，机器人能够进入方格 [35, 37] ，因为3+5+3+7=18。但它不能进入方格 [35, 38]，因为3+5+3+8=19。请问该机器人能够到达多少个格子？
  *
@@ -42,6 +45,8 @@ public class MovingCount13 {
     public static void main(String[] args) {
         System.out.println(movingCount(2, 3, 1));
         System.out.println(movingCount(3, 1, 0));
+        System.out.println(bfs(2, 3, 1));
+        System.out.println(bfs(3, 1, 0));
     }
 
     public static int movingCount(int row, int col, int num) {
@@ -107,6 +112,66 @@ public class MovingCount13 {
             i = i / 10;
         }
         return sum;
+    }
+
+    /**
+     * <p> 广度优先遍历 BFS
+     * <p> BFS/DFS ： 两者目标都是遍历整个矩阵，不同点在于搜索顺序不同。
+     * <p> 1. DFS 是朝一个方向走到底，再回退，以此类推。
+     * <p> 2. BFS 则是按照“平推”的方式向前搜索。
+     *
+     *
+     * <p> BFS 实现： 通常利用队列实现广度优先遍历。
+     *
+     * <p> 算法解析：
+     * <p> 初始化： 将机器人初始点 (0, 0)加入队列 queue ；
+     * <p> 迭代终止条件： queue 为空。代表已遍历完所有可达解。
+     * <p> 迭代工作：
+     * <p>  1. 单元格出队： 将队首单元格的 索引、数位和 弹出，作为当前搜索单元格。
+     * <p>  2. 判断是否跳过：
+     * <p>     ① 行列索引越界
+     * <p>     ② 数位和超出目标值 k
+     * <p>     ③ 当前元素已访问过 时，执行 continue 。
+     * <p>  3. 标记当前单元格 ：将单元格索引 (i, j) 存入 Set visited 中，代表此单元格 已被访问过 。
+     * <p>  4. 单元格入队： 将当前元素的 下方、右方 单元格的 索引、数位和 加入 queue 。
+     * <p> 返回值： Set visited 的长度 len(visited) ，即可达解的数量。
+     * <p>
+     * 链接：https://leetcode-cn.com/problems/ji-qi-ren-de-yun-dong-fan-wei-lcof/solution/mian-shi-ti-13-ji-qi-ren-de-yun-dong-fan-wei-dfs-b/
+     *
+     * @return
+     */
+    public static int bfs(int row, int col, int num) {
+        boolean[][] visited = new boolean[row][col];
+        Queue<int[]> queue = new LinkedList<int[]>();
+        int res = 0;
+        // int[]{r=行,c=列}
+        queue.add(new int[]{0, 0});
+        while (!queue.isEmpty()) {
+            int[] cell = queue.poll();
+            int r = cell[0];
+            int c = cell[1];
+            int cellNum = getNum(r) + getNum(c);
+            if (r >= visited.length) {
+                continue;
+            } else if (c >= visited[0].length) {
+                continue;
+            } else if (cellNum > num) {
+                continue;
+            } else if (visited[r][c]) {
+                continue;
+            }
+            visited[r][c] = true;
+            res++;
+            // 参考:
+            // https://leetcode-cn.com/problems/ji-qi-ren-de-yun-dong-fan-wei-lcof/solution/jian-zhi-offerer-shua-javadfs-bfs-tu-jie-py05/
+            // TODO 向右边移动
+            // 向下一行,当前 col
+            queue.add(new int[]{r + 1, c});
+            // TODO 向下移动 (如果只是向右移动, 到了矩阵最右边怎么办?)
+            // 向右一列,当前 row
+            queue.add(new int[]{r, c + 1});
+        }
+        return res;
     }
 
 

@@ -12,7 +12,7 @@ package com.gy.algorithm.offer2;
  * @author : leelipeng
  * @date : 2021-02-02 08:44
  */
-public class NrintNumbers1ToN {
+public class NrintNumbers1ToN17 {
 
     public static void main(String[] args) {
         show(printNumbers1(1));

@@ -87,6 +87,15 @@ public class TiaoZhenNumberLocation21 {
     /**
      * 个人想法: 上面的算法是使用 [首尾双指针] 从2个方向扫描数据.
      * 也可以定义 [快慢双指针] 从1个方向扫描数据.
+     * <p>
+     * 解题步骤:
+     * <p> 1. 定义快慢双指针 fastfast 和 lowlow ，fastfast 在前， lowlow 在后 .
+     * <p> 2. fastfast 的作用是向前搜索奇数位置，lowlow 的作用是指向下一个奇数应当存放的位置
+     * <p> 3. fastfast 向前移动，当它搜索到奇数时，将它和 nums[low]nums[low] 交换，此时 lowlow 向前移动一个位置 .
+     * <p> 4. 重复上述操作，直到 fastfast 指向数组末尾 .
+     * <p>
+     * 作者：huwt
+     * 链接：https://leetcode-cn.com/problems/diao-zheng-shu-zu-shun-xu-shi-qi-shu-wei-yu-ou-shu-qian-mian-lcof/solution/ti-jie-shou-wei-shuang-zhi-zhen-kuai-man-shuang-zh/
      *
      * @param nums
      * @return

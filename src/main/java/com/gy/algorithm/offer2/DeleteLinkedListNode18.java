@@ -40,6 +40,14 @@ public class DeleteLinkedListNode18 {
         System.out.println(rstNode.val);
     }
 
+    /**
+     * 个人理解: 通过双指针的方式解决问题，与LeetCode上的思路一样.
+     * https://leetcode-cn.com/problems/shan-chu-lian-biao-de-jie-dian-lcof/solution/shuang-zhi-zhen-he-di-gui-liang-chong-fang-shi-jie/
+     *
+     * @param head
+     * @param value
+     * @return
+     */
     public static ListNode deleteNode(ListNode head, int value) {
         ListNode dummyHead = head;
         ListNode pre = head.next;
@@ -51,6 +59,31 @@ public class DeleteLinkedListNode18 {
             dummyHead = pre;
             pre = pre.next;
         }
+        return head;
+    }
+
+    /**
+     * 参考: 通过递归的方式删除节点.
+     * https://leetcode-cn.com/problems/shan-chu-lian-biao-de-jie-dian-lcof/solution/shuang-zhi-zhen-he-di-gui-liang-chong-fang-shi-jie/
+     *
+     * @param head
+     * @param val
+     * @return
+     */
+    public static ListNode deleteNodeByCycle(ListNode head, int val) {
+        // TODO
+        //  递归过程中,如果节点为null,说明到达了链表尾部.
+        if (head == null) {
+            return head;
+        }
+
+        // TODO 当前值 等于 val, 返回下一个节点.
+        if (head.val == val) {
+            return head.next;
+        }
+
+        // TODO 当前节点值 不等于 给定val, 接着递归求解.
+        head.next = deleteNodeByCycle(head.next, val);
         return head;
     }
 

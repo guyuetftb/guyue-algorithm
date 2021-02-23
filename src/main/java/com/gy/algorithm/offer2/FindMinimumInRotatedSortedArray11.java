@@ -17,7 +17,7 @@ package com.gy.algorithm.offer2;
  * 链接：https://leetcode-cn.com/problems/xuan-zhuan-shu-zu-de-zui-xiao-shu-zi-lcof
  *
  * <p> 解题1: </p>
- * <p> 如下图所示，寻找旋转数组的最小元素即为寻找 右排序数组 的首个元素 nums[x]nums[x] ，称 xx 为 旋转点 。</p>
+ * <p> 如下图所示，寻找旋转数组的最小元素即为寻找 右排序数组 的首个元素 nums[x]，称 x 为 旋转点 。</p>
  * <p> 循环二分： 设 m = (i + j) / 2，
  * <p> m=(i+j)/2 为每次二分的中点（ "/" 代表向下取整除法，因此恒有 i \leq m < ji≤m<j ），可分为以下三种情况：
  * <p> 1. 当 nums[m] > nums[j] 时： m 一定在 左排序数组 中，即旋转点 x 一定在 [m + 1, j] 闭区间内，因此执行 i = m + 1

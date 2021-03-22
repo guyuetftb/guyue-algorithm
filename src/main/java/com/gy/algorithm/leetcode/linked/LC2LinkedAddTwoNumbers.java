@@ -46,7 +46,7 @@ public class LC2LinkedAddTwoNumbers {
         linked2.add(3, 2);
         linked2.add(4, 1);
 
-        Node<Integer> node = solution(linked1.getFirstNode(), linked2.getFirstNode());
+        Node<Integer> node = null;// solution(linked1.getFirstNode(), linked2.getFirstNode());
         System.out.println(" -- new linked -- " + node);
     }
 
